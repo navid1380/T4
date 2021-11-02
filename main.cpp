@@ -1,27 +1,27 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main()
+int main(int argc, char** argv)
+ {
+    int a, b, B1, B2, temp, KMM;
+    cout<<"adad avval = ";
+    cin>>a;
+    cout<<"adad dovvom = ";
+    cin>>b;
+    B1 = a;
+    B2 = b;
 
-  {
-    int n , m ;
-  cout << " n = " ;
-  cin >> n ;
-  cout << " m = " ;
-  cin >> m ;
-  for (int i = 0 ; i<n ; i++ )
-  {
-      for (int j = 0 ; j<m ; j++)
-      {
-          if (j % 2 == 0 )
-          {
-              cout << " @ " ;
-          }
-          else
-          {
-              cout << " $ " ;
-          }
-      }
-       cout << endl ;
-  }
-  }
+    while(true)
+    {
+        if(b == 0) break;
+
+        temp = a%b;
+        a = b;
+        b = temp;
+    }
+
+    KMM = (B1 * B2) / a;
+    cout<<"K.M.M = "<<KMM;
+
+    return 0;
+}
